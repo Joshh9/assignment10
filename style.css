@@ -1,0 +1,120 @@
+/* Import and apply fonts */
+body {
+  font-family: 'Roboto Condensed', 'Trebuchet MS', sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Heading styles */
+h1, h2 {
+  color: teal;
+  font-family: 'Cinzel Decorative', Verdana, sans-serif;
+  margin: 1em 0 0.5em;
+}
+
+/* Paragraphs and emphasis */
+p {
+  color: darkslategray;
+  margin: 0 0 1em;
+}
+
+strong {
+  color: rgb(0, 139, 16);
+}
+
+em {
+  color: tomato;
+}
+
+/* Lists */
+ul {
+  border: 2px dashed burlywood;
+  background-color: burlywood;
+  padding: 8px 18px;
+  border-radius: 6px;
+  margin-bottom: 1em;
+}
+
+ol {
+  border: 2px dashed olive;
+  background-color: olive;
+  padding: 8px 18px;
+  border-radius: 6px;
+  margin-bottom: 1em;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid teal;
+  margin: 1.5em 0;
+}
+
+/* Description lists */
+dl {
+  background-color: #dedcdc65;
+  padding: 10px;
+  margin-bottom: 1em;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+dd {
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+/* Layout */
+header, footer {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+section {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+  body {
+    font-size: 17px;
+  }
+
+  .grid-layout {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+
+  header, footer {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+}
